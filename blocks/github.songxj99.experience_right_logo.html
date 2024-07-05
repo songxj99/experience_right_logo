@@ -20,7 +20,6 @@
 
   {{/* Default to user's custom order (as requested in #1761) as Hugo doesn't support multiple sorts on params. */}}
   {{ range $idx, $key := $block.content.items }}
-  <div class="row experience">
     <!-- Timeline -->
     <div class="col-auto text-center flex-column d-none d-sm-flex">
       <div class="row h-50">
@@ -78,7 +77,6 @@
         </div>
       </div>
     </div>
-  </div>
   {{end}}
   {{end}}
 </div>
