@@ -33,5 +33,5 @@
 // For a UL after P, remove the spacing between (P margin-bottom) without affecting any nested lists.
 .card .card-text p + ul {
   margin-top: -1rem;
-  margin-bottom: 0;
+  margin-bottom: -1rem;
 }
