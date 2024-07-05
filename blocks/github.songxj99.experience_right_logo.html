@@ -8,14 +8,15 @@
 {{ $columns := $block.design.columns | default "2" }}
 
 <!-- Experience widget -->
-<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
-<!--   {{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }} -->
 
-  <div class="row  {{if not $block.content.title | or (eq $columns "1") }}justify-content-center{{end}}">
+<div class="row  {{if not $block.content.title | or (eq $columns "1") }}justify-content-center{{end}}">
     <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
       {{ with $block.content.title }}<h1 class="mb-0">{{ . | markdownify | emojify }}</h1>{{ end }}
     </div>
   </div>
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+<!--   {{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }} -->
   
   {{ if $block.content.items }}
   {{ $exp_len := len $block.content.items }}
