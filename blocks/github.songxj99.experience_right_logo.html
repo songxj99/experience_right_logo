@@ -42,7 +42,7 @@
           <div class="d-flex align-content-start">
             <div class="mr-2 mb-2">
               {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
-              <img src="{{ $icon_path.RelPermalink }}" width="60px" height="60px" alt="{{.company | plainify}}" loading="lazy">
+              <img src="{{ $icon_path.RelPermalink }}" width="60px" height="60px" alt="{{.company | plainify}}" loading="lazy" style="margin-top: 10px;">
               {{- with .company_url}}</a>{{end -}}
             </div>
             <div>
